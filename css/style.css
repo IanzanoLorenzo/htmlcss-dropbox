@@ -1,3 +1,5 @@
+/* general */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +8,68 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-buttons{
+    display: inline-block;
+}
+
+button{
+    border: none;
+    padding: 9px 15px 7px 15px;
+    font-size: inherit;
+}
+
+button.transp{
+    background-color: inherit;
+    color: black;
+    border: none;
+}
+
+button.blue{
+    background-color: rgb(0,97,255);
+    color: white;
+}
+
+/* header */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: white;
+    box-shadow: 0 0 2px gray;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul, nav col{
+    display: flex;
+}
+
+nav a{
+    margin: 0 20px;
+}
+
+nav>.row>.col{
+    margin: 25px 20px;
+}
+
+nav img{
+    margin-right: 15px;
 }
