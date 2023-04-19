@@ -10,14 +10,21 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-a{
+a.no-default{
     text-decoration: none;
     color: inherit;
 }
 
-#nav-buttons{
-    display: inline-block;
+button:hover, a:hover{
+    text-decoration: underline;
 }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* buttons */
 
 button{
     border: none;
@@ -28,7 +35,6 @@ button{
 button.transp{
     background-color: inherit;
     color: black;
-    border: none;
 }
 
 button.blue{
@@ -36,7 +42,58 @@ button.blue{
     color: white;
 }
 
+button.white{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* fine buttons */
+
+.container-1200px{
+    width: 1200px;
+    margin: auto;
+}
+
+.container-920px{
+    width: 920px;
+    margin: auto;
+}
+
+.col-100{
+    width: 100%;
+}
+
+.col-70{
+    width: 70%;
+}
+
+.col-33{
+    width: calc(100% / 3);
+}
+
+.col-30{
+    width: 30%;
+}
+
+/* text formats */
+
+h1{
+    font-size: 70px;
+    font-weight: 800;
+    margin: 80px 0;
+}
+
+h2{
+    font-size: 40px;
+    margin: 40px 0;
+}
+
+/* fine text formats */
+
 /* header */
+
+/* nav */
 
 nav{
     position: fixed;
@@ -48,13 +105,7 @@ nav{
     box-shadow: 0 0 2px gray;
 }
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-nav ul{
+ul{
     list-style: none;
 }
 
@@ -72,4 +123,125 @@ nav>.row>.col{
 
 nav img{
     margin-right: 15px;
+}
+
+#nav-buttons{
+    display: inline-block;
+}
+
+nav .row{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* main */
+
+main{
+    margin-top: 84px;
+}
+
+/* jumbotron */
+
+.jumbotron{
+    background-color: rgb(180,208,231);
+    width: 100%;
+}
+
+.jumbotron .row{
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.jumbotron .col-70 img{
+    width: 100%;
+}
+
+.jumbotron button{
+    margin: 35px 0;
+    padding: 13px 18px;
+}
+
+#arrow-down{
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.jumbotron .col-70{
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+}
+
+/* sezione abbonamenti */
+
+.section-abb{
+    margin-top: 105px;
+}
+
+.section-abb .row{
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.section-abb .col-33{
+    width: calc(100% / 3 - 30px);
+    border: 2px solid rgb(227,227,229);
+    margin: 60px 0;
+}
+
+.n-utenti{
+    width: 100%;
+    border-bottom: 2px solid rgb(227,227,229);
+    text-align: center;
+    padding: 10px;
+}
+
+.section-abb .content{
+    padding: 30px 30px;
+}
+
+.section-abb .row>.col-100:last-child{
+    border: 2px solid rgb(227,227,229);
+}
+
+.section-abb h6{
+    margin: 10px 0 7px 0;
+}
+
+.section-abb .content p{
+    font-size: 12px;
+    color: rgb(146, 146, 146);
+}
+
+.vantaggi{
+    min-height: 120px;
+    margin: 50px 0;
+}
+
+.vantaggi li{
+    margin: 10px 0;
+    font-size: 12px;
+    display: flex;
+}
+
+.vantaggi li i{
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+.section-abb .col-33 button{
+    width: 100%;
+    font-size: 12px;
+}
+
+.section-abb .content div {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.section-abb .content hr{
+    width: 20%;
+    background-color: rgb(227,227,229);
+    height: 2px;
 }
