@@ -1,122 +1,116 @@
-            /* general */
+/* general */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
-
-a.no-default{
+a.no-default {
     text-decoration: none;
     color: inherit;
 }
 
-button:hover, a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
 }
 
-            /* buttons */
+/* buttons */
 
-button{
+button {
     border: none;
     padding: 9px 15px 7px 15px;
     font-size: inherit;
 }
 
-button.transp{
+button.transp {
     background-color: inherit;
     color: black;
 }
 
-button.blue{
-    background-color: rgb(0,97,255);
+button.blue {
+    background-color: rgb(0, 97, 255);
     color: white;
 }
 
-button.white{
+button.white {
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
-            /* fine buttons */
+/* fine buttons */
 
-.container{
+.container {
     width: 100%;
 }
 
-.container-1200px{
+.container-1200px {
     width: 1200px;
     margin: auto;
 }
 
-.container-920px{
+.container-920px {
     width: 920px;
     margin: auto;
 }
 
-.col-100{
+.col-100 {
     width: 100%;
 }
 
-.col-70{
+.col-70 {
     width: 70%;
 }
 
-.col-60{
+.col-60 {
     width: 60%;
 }
 
-.col-40{
+.col-40 {
     width: 40%;
 }
 
-.col-33{
+.col-33 {
     width: calc(100% / 3);
 }
 
-.col-30{
+.col-30 {
     width: 30%;
 }
 
-.col-20{
+.col-20 {
     width: 20%;
 }
 
 
-            /* text formats */
+/* text formats */
 
-h1{
+h1 {
     font-size: 70px;
     font-weight: 800;
     margin: 80px 0;
 }
 
-h2{
+h2 {
     font-size: 40px;
     margin: 40px 0;
 }
 
-            /* fine text formats */
-            /* header */
-            /* nav */
+/* fine text formats */
+/* header */
+/* nav */
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -126,134 +120,136 @@ nav{
     box-shadow: 0 0 2px gray;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-nav ul, nav col{
+nav ul,
+nav col {
     display: flex;
 }
 
-nav a{
+nav a {
     margin: 0 20px;
 }
 
-nav>.row>.col{
+nav>.row>.col {
     margin: 25px 20px;
 }
 
-nav img{
+nav img {
     margin-right: 15px;
 }
 
-#nav-buttons{
+#nav-buttons {
     display: inline-block;
 }
 
-nav .row{
+nav .row {
     justify-content: space-between;
     align-items: flex-end;
 }
-            /* fine header */
-            /* main */
 
-main{
+/* fine header */
+/* main */
+
+main {
     margin-top: 84px;
 }
 
-            /* jumbotron */
+/* jumbotron */
 
-#jumbotron{
-    background-color: rgb(180,208,231);
+#jumbotron {
+    background-color: rgb(180, 208, 231);
     width: 100%;
 }
 
-#jumbotron .row{
+#jumbotron .row {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
 }
 
-#jumbotron .col-70 img{
+#jumbotron .col-70 img {
     width: 100%;
 }
 
-#jumbotron button{
+#jumbotron button {
     margin: 35px 0;
     padding: 13px 18px;
 }
 
-#arrow-down{
+#arrow-down {
     font-size: 50px;
     margin-top: 70px;
 }
 
-#jumbotron .col-70{
+#jumbotron .col-70 {
     position: absolute;
     right: 0;
     bottom: -75px;
 }
 
-            /* sezione abbonamenti */
+/* sezione abbonamenti */
 
-#section-abb{
+#section-abb {
     margin-top: 105px;
 }
 
-#section-abb .row{
+#section-abb .row {
     justify-content: space-between;
     align-items: stretch;
 }
 
-#section-abb .col-33{
+#section-abb .col-33 {
     width: calc(100% / 3 - 30px);
-    border: 2px solid rgb(227,227,229);
+    border: 2px solid rgb(227, 227, 229);
     margin: 60px 0;
 }
 
-.n-utenti{
+.n-utenti {
     width: 100%;
-    border-bottom: 2px solid rgb(227,227,229);
+    border-bottom: 2px solid rgb(227, 227, 229);
     text-align: center;
     padding: 10px;
 }
 
-#section-abb .content{
+#section-abb .content {
     padding: 30px 30px;
 }
 
-#section-abb .row>.col-100:last-child{
-    border: 2px solid rgb(227,227,229);
+#section-abb .row>.col-100:last-child {
+    border: 2px solid rgb(227, 227, 229);
     display: flex;
     flex-wrap: wrap;
 }
 
-#section-abb h6{
+#section-abb h6 {
     margin: 10px 0 7px 0;
 }
 
-#section-abb .content p{
+#section-abb .content p {
     font-size: 12px;
     color: rgb(146, 146, 146);
 }
 
-.lista-in-abb{
+.lista-in-abb {
     min-height: 120px;
     margin: 50px 0;
 }
 
-.lista-in-abb li{
+.lista-in-abb li {
     margin: 10px 0;
     font-size: 12px;
     display: flex;
 }
 
-.lista-in-abb li i{
+.lista-in-abb li i {
     font-size: 12px;
     margin-right: 7px;
 }
 
-#section-abb .col-33 button{
+#section-abb .col-33 button {
     width: 100%;
     font-size: 12px;
 }
@@ -263,94 +259,110 @@ main{
     margin: 20px 0;
 }
 
-#section-abb .content hr{
+#section-abb .content hr {
     width: 20%;
-    background-color: rgb(227,227,229);
+    background-color: rgb(227, 227, 229);
     height: 2px;
 }
 
-.fa-check{
-    color: rgb(18,101,255);
+.fa-check {
+    color: rgb(18, 101, 255);
 }
 
-#section-abb .col-100 button{
+#section-abb .col-100 button {
     font-size: 12px;
 }
 
-            /* sezione partners */
+/* sezione partners */
 
-#partners{
+#partners {
     margin-top: 130px;
 }
 
-#partners img{
+#partners img {
     width: 100%;
 }
 
-#partners .col-40{
+#partners .col-40 {
     padding: 50px;
 }
 
-#partners .col-40 p{
+#partners .col-40 p {
     margin: 20px 0;
 }
 
-            /* sezione operazioni */
+/* sezione operazioni */
 
-#operazioni{
-    margin-top: 70px ;
+#operazioni {
+    margin-top: 70px;
 }
 
-#operazioni .row{
+#operazioni .row {
     justify-content: space-between;
 }
 
-#operazioni .col-33{
-    width: calc(100% / 3 - 30px);  
+#operazioni .col-33 {
+    width: calc(100% / 3 - 30px);
 }
 
-#operazioni .col-33 img{
+#operazioni .col-33 img {
     width: 100%;
 }
 
-#operazioni .col-33 p{
+#operazioni .col-33 p {
     margin: 30px 0;
 }
 
-            /* sezione clienti */
+/* sezione clienti */
 
-#sezione-clienti .container{
-    background-color: rgb(245,245,245);
+#sezione-clienti .container {
+    background-color: rgb(245, 245, 245);
     margin-top: 80px;
 }
 
-#sezione-clienti .row{
+#sezione-clienti .row {
     margin: auto;
     justify-content: center;
     max-width: 1920px;
 }
 
-#sezione-clienti .col-33>img{
-    width: 50%;
-    padding: 50px 0 0 50px;
-
+#sezione-clienti .col-33>.content{
+    padding: 65px;
 }
 
-#sezione-clienti .col-33{
+#sezione-clienti .col-33>.content>img {
+    width: calc(50% - 50px);
+}
+
+#sezione-clienti .col-33 {
     max-width: calc(1920px / 3);
     height: calc(1920px / 3);
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
 }
 
-.square{
+#sezione-clienti .col-33:nth-child(2){
+    display: inline-block;
+}
+
+#sezione-clienti .col-33>.content>hr {
+    width: 15%;
+    margin: 50px 0;
+    border-color: lightgray;
+}
+
+#sezione-clienti p{
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.square {
     width: 50%;
     height: 50%;
     position: relative;
 }
 
-.square img{
+.square img {
     width: 50%;
     position: absolute;
     left: 50%;
@@ -359,150 +371,150 @@ main{
     filter: invert(100%);
 }
 
-            /* styling squares */
+/* styling squares */
 
-    #designit{
-        background-color: rgb(162,211,155);
-        border: solid rgb(209,233,205) 15px;
-    }
-
-    #arizona-state-university{
-        background-color: rgb(97,8,43);
-    }
-
-    #university-of-florida{
-        background-color: rgb(0,147,206);
-    }
-
-    #topps{
-        background-color: rgb(255,28,28);
-    }
-
-    #world-bicycle-relief{
-        background-color: rgb(213,0,31);
-    }
-
-    #hearst{
-        background-color: rgb(180,208,231);
-    }
-
-    #lonely-planet{
-        background-color: rgb(13,36,129);
-    }
-
-    #clear-channel-outdoor{
-        background-color: rgb(255,216,48);
-    }
-
-            /* sezione prova gratuita */
-
-#section-prova-gratuita{
-    color: rgb(97,8,43);
-    background-color: rgb(180,208,231);
+#designit {
+    background-color: rgb(162, 211, 155);
+    border: solid rgb(209, 233, 205) 15px;
 }
 
-#section-prova-gratuita .row>*{
+#arizona-state-university {
+    background-color: rgb(97, 8, 43);
+}
+
+#university-of-florida {
+    background-color: rgb(0, 147, 206);
+}
+
+#topps {
+    background-color: rgb(255, 28, 28);
+}
+
+#world-bicycle-relief {
+    background-color: rgb(213, 0, 31);
+}
+
+#hearst {
+    background-color: rgb(180, 208, 231);
+}
+
+#lonely-planet {
+    background-color: rgb(13, 36, 129);
+}
+
+#clear-channel-outdoor {
+    background-color: rgb(255, 216, 48);
+}
+
+/* sezione prova gratuita */
+
+#section-prova-gratuita {
+    color: rgb(97, 8, 43);
+    background-color: rgb(180, 208, 231);
+}
+
+#section-prova-gratuita .row>* {
     display: flex;
     align-items: center;
     margin: 60px 0;
 }
 
-#section-prova-gratuita .row>.col-40{
+#section-prova-gratuita .row>.col-40 {
     justify-content: flex-end;
 }
 
-#section-prova-gratuita button{
+#section-prova-gratuita button {
     border: none;
     padding: 15px 50px;
 }
 
-            /* section faq */
+/* section faq */
 
-#faq{
+#faq {
     margin: 150px 0;
 }
 
-#faq .row>*{
+#faq .row>* {
     border-bottom: 0.01px solid black;
 }
 
-#faq .col-100>p{
+#faq .col-100>p {
     margin: 30px 0;
     font-weight: 700;
 }
 
-#faq .col-100{
+#faq .col-100 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#faq h2{
+#faq h2 {
     margin-top: 0;
 }
 
-.arrows{
+.arrows {
     cursor: pointer;
 }
 
-.risposta{
+.risposta {
     display: none;
     padding: 0 30px 30px 30px;
     margin: 0;
     font-size: 13px;
 }
 
-.uparr{
+.uparr {
     display: none;
 }
 
-.arrows:hover .uparr{
+.arrows:hover .uparr {
     display: block;
 }
 
-.arrows:hover .downarr{
+.arrows:hover .downarr {
     display: none;
 }
 
-.col-100 .arrows:hover + .container .risposta{
+.col-100 .arrows:hover+.container .risposta {
     display: block;
 }
 
 
 
-            /* footer */
+/* footer */
 
-footer{
+footer {
     background-color: black;
     color: white;
 }
 
-            /* bottom nav */
+/* bottom nav */
 
-#bottom-nav{
+#bottom-nav {
     padding: 100px 0;
 }
 
-#bottom-nav .row{
+#bottom-nav .row {
     flex-direction: row;
 }
 
-#bottom-nav li{
+#bottom-nav li {
     margin: 15px 0;
 }
 
 /* sezione lingua */
 
-#lingua .row{
-    color: rgb(153,153,153);
+#lingua .row {
+    color: rgb(153, 153, 153);
 }
 
-#lingua .row{
+#lingua .row {
     padding: 40px 0;
 }
 
-#lingua #scegli-lingua{
+#lingua #scegli-lingua {
     border: none;
     background-color: inherit;
     color: inherit;
@@ -510,6 +522,6 @@ footer{
 
 /* L'HR (letto "accaerre") OSSIA LA LINEA ORIZZONTALE */
 
-#lingua hr{
+#lingua hr {
     width: 10%;
 }
