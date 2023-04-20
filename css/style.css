@@ -88,6 +88,11 @@ button.white{
     width: 30%;
 }
 
+.col-20{
+    width: 20%;
+}
+
+
             /* text formats */
 
 h1{
@@ -409,6 +414,7 @@ main{
 
 #faq .col-100>p{
     margin: 30px 0;
+    font-weight: 700;
 }
 
 #faq .col-100{
@@ -443,4 +449,47 @@ main{
 
 .col-100 .arrows:hover + .container .risposta{
     display: block;
+}
+
+            /* footer */
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+            /* bottom nav */
+
+#bottom-nav{
+    padding: 100px 0;
+}
+
+#bottom-nav .row{
+    flex-direction: row;
+}
+
+#bottom-nav li{
+    margin: 15px 0;
+}
+
+/* sezione lingua */
+
+#lingua .row{
+    color: rgb(153,153,153);
+}
+
+#lingua .row{
+    padding: 40px 0;
+}
+
+#lingua #scegli-lingua{
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+/* L'HR (letto "accaerre") OSSIA LA LINEA ORIZZONTALE */
+
+#lingua hr{
+    width: 10%;
 }
