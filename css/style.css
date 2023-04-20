@@ -8,7 +8,13 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 a.no-default{
     text-decoration: none;
@@ -324,63 +330,67 @@ main{
     max-width: 1920px;
 }
 
+#sezione-clienti .col-33>img{
+    width: 50%;
+    padding: 50px 0 0 50px;
 
+}
 
 #sezione-clienti .col-33{
     max-width: calc(1920px / 3);
     height: calc(1920px / 3);
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .square{
     width: 50%;
     height: 50%;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+}
+
+.square img{
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(100%);
 }
 
             /* styling squares */
 
     #designit{
-        background-image: url(../img/designit.svg);
         background-color: rgb(162,211,155);
         border: solid rgb(209,233,205) 15px;
     }
 
     #arizona-state-university{
-        background-image: url(../img/arizona_state_university.svg);
         background-color: rgb(97,8,43);
     }
 
     #university-of-florida{
-        background-image: url(../img/university_of_florida.svg);
         background-color: rgb(0,147,206);
     }
 
     #topps{
-        background-image: url(../img/topps.svg);
         background-color: rgb(255,28,28);
     }
 
     #world-bicycle-relief{
-        background-image: url(../img/world_bicycle_relief.svg);
         background-color: rgb(213,0,31);
     }
 
     #hearst{
-        background-image: url(../img/hearst_corp.svg);
         background-color: rgb(180,208,231);
     }
 
     #lonely-planet{
-        background-image: url(../img/lonely_planet.svg);
         background-color: rgb(13,36,129);
     }
 
     #clear-channel-outdoor{
-        background-image: url(../img/clear_channel.svg);
         background-color: rgb(255,216,48);
     }
 
@@ -408,6 +418,10 @@ main{
 
             /* section faq */
 
+#faq{
+    margin: 150px 0;
+}
+
 #faq .row>*{
     border-bottom: 0.01px solid black;
 }
@@ -422,6 +436,10 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#faq h2{
+    margin-top: 0;
 }
 
 .arrows{
@@ -450,6 +468,8 @@ main{
 .col-100 .arrows:hover + .container .risposta{
     display: block;
 }
+
+
 
             /* footer */
 
