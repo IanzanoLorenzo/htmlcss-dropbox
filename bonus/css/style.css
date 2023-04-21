@@ -128,7 +128,7 @@ nav{
     box-shadow: 0 0 2px gray;
     height: 84px;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 }
 
@@ -138,10 +138,11 @@ ul{
 
 nav ul, nav col{
     display: flex;
+    align-items: stretch;
 }
 
 nav a{
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 nav img{
@@ -150,11 +151,12 @@ nav img{
 
 #nav-buttons{
     display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 nav .row{
     justify-content: space-between;
-    align-items: flex-end;
 }
             /* fine header */
             /* main */
@@ -282,7 +284,7 @@ main{
             /* sezione partners */
 
 #partners{
-    margin-top: 130px;
+    padding-top: 130px;
 }
 
 #partners img{
@@ -300,7 +302,7 @@ main{
             /* sezione operazioni */
 
 #operazioni{
-    margin-top: 70px ;
+    padding-top: 70px ;
 }
 
 #operazioni .row{
@@ -324,6 +326,11 @@ main{
 #sezione-clienti .container{
     background-color: rgb(245,245,245);
     margin-top: 80px;
+}
+
+#sezione-clienti h2{
+    margin: 0;
+    padding:100px 0;
 }
 
 #sezione-clienti .row{
@@ -426,7 +433,7 @@ main{
             /* section faq */
 
 #faq{
-    margin: 150px 0;
+    padding: 150px 0;
 }
 
 #faq .row>*{
@@ -523,17 +530,27 @@ footer{
 
             /* nav bonus */
 
+nav col>*{
+    display: flex;
+    align-items: center;
+}
+
 nav li{
     position:relative;
+    display: flex;
+    align-items: center;
+}
+
+.voce-nav {
+    padding: 0 10px;
 }
 
 .tendina{
     display: none;
     position: absolute;
-    left:20px;
-    top: 55px;
+    left:0;
+    top: 84px;
     justify-content: space-between;
-    width: 500px;
     background-color: beige;
     padding: 10px;
 }
@@ -541,7 +558,7 @@ nav li{
 .tendina>ul{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 200px;
 }
 
 .tendina li{
@@ -549,6 +566,20 @@ nav li{
     margin: 5px 0;
 }
 
+.tendina a{
+    margin: 0;
+}
+
+.voce-nav:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
 .voce-nav:hover .tendina{
     display: flex
+}
+
+nav .col{
+    display: flex;
+
 }
