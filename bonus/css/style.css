@@ -537,12 +537,11 @@ nav col>*{
 
 nav li{
     position:relative;
-    display: flex;
-    align-items: center;
 }
 
-.voce-nav {
-    padding: 0 10px;
+.voce-nav{
+    display: flex;
+    align-items: center;
 }
 
 .tendina{
